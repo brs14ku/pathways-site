@@ -260,14 +260,51 @@
 
         /* About Section */
         .about-content {
-            max-width: 800px;
+            max-width: 1000px;
             margin: 0 auto;
+        }
+
+        .about-layout {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .about-image {
             text-align: center;
         }
 
-        .about-content p {
+        .about-image img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-caption {
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: var(--text-color);
+        }
+
+        .about-text p {
             font-size: 1.125rem;
             margin-bottom: 1.5rem;
+            text-align: left;
+        }
+
+        @media (min-width: 768px) {
+            .about-layout {
+                grid-template-columns: 300px 1fr;
+                gap: 3rem;
+            }
+
+            .about-image {
+                position: sticky;
+                top: 100px;
+            }
         }
 
         /* Services Section */
@@ -674,11 +711,19 @@
         <div class="container">
             <h2 class="section-title">About Pathways</h2>
             <div class="about-content">
-                <p>Pathways Case Management Services provides Targeted Case Management (TCM) for individuals with intellectual and developmental disabilities throughout Kansas. Our mission is to empower individuals to achieve their goals and live fulfilling, independent lives within their communities.</p>
+                <div class="about-layout">
+                    <div class="about-image">
+                        <img src="images/reilly-schultz.jpg" alt="Reilly Schultz, Managing Director of Pathways Case Management Services">
+                        <p class="image-caption"><strong>Reilly Schultz</strong><br>Managing Director</p>
+                    </div>
+                    <div class="about-text">
+                        <p>Pathways Case Management Services provides Targeted Case Management (TCM) for individuals with intellectual and developmental disabilities throughout Kansas. Our mission is to empower individuals to achieve their goals and live fulfilling, independent lives within their communities.</p>
 
-                <p>We take a person-centered approach to service coordination, focusing on each individual's unique strengths, preferences, and aspirations. Our experienced case managers work collaboratively with individuals, families, and service providers to ensure access to the resources and support needed for success.</p>
+                        <p>We take a person-centered approach to service coordination, focusing on each individual's unique strengths, preferences, and aspirations. Our experienced case managers work collaboratively with individuals, families, and service providers to ensure access to the resources and support needed for success.</p>
 
-                <p>As a licensed and certified provider in Kansas, we are committed to maintaining the highest standards of quality and professionalism in all aspects of our service delivery. We believe in building lasting relationships based on trust, respect, and genuine care for the people we serve.</p>
+                        <p>As a licensed and certified provider in Kansas, we are committed to maintaining the highest standards of quality and professionalism in all aspects of our service delivery. We believe in building lasting relationships based on trust, respect, and genuine care for the people we serve.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -808,7 +853,7 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            No. TCM services are covered by Medicaid (Title XIX) at no cost to you or your family.
+                            No. TCM services are covered by Medicaid (Title XIX) at no cost to you or your family. We are contracted with Healthy Blue, United Healthcare, and Sunflower Health Plan. If you are not yet Medicaid-eligible, private pay arrangements are available.
                         </div>
                     </div>
                 </div>
@@ -822,7 +867,7 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Contact us at <a href="mailto:rschultz@pathwayscms.com">rschultz@pathwayscms.com</a> or through our website. We'll discuss your needs, verify your TCM eligibility with your local CDDO, and begin the process of assigning you a case manager and scheduling your first meeting.
+                            If you are already established with your local CDDO, contact us at <a href="mailto:rschultz@pathwayscms.com">rschultz@pathwayscms.com</a> or through our website. We'll discuss your needs and our approach to see if we're a good fit. You'll then complete a choice form with your CDDO indicating Pathways as your selected provider. Once we receive notification of your choice form, we will contact you to schedule your first visit.
                         </div>
                     </div>
                 </div>
@@ -864,7 +909,8 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            We prioritize responsive communication. Your case manager will provide you with their contact information and will respond to non-emergency concerns within one business day. For urgent situations, we handle TCM Crisis Requests promptly and will work with you to address immediate needs.
+                            We prioritize responsive communication. Your case manager will provide you with their contact information and will respond to non-emergency concerns within one business day. For urgent situations, we handle TCM Crisis Funding Requests promptly and will work with you to address immediate needs.<br><br>
+                            Please note: TCM does not provide emergency response or direct services. In the event of an emergency or urgent safety matter, please contact 911 or Adult Protective Services/Child Protective Services at 1-800-922-5330.
                         </div>
                     </div>
                 </div>
@@ -892,21 +938,21 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Yes. All our case managers hold Bachelor's degrees in social work, psychology, special education, or related human services fields. They complete comprehensive training including Kansas TCM certification, person-centered planning, HIPAA compliance, and ongoing professional development. Our staff undergo thorough background checks including criminal history, abuse/neglect registries, and fingerprinting.
+                            Yes. All our case managers must meet guidelines set by Kansas Article 63. We prioritize candidates who hold Bachelor's degrees in social work, psychology, special education, or related human services fields, and we value lived experience supporting the I/DD community. All case managers complete comprehensive training including Kansas TCM certification, person-centered planning, HIPAA compliance, and ongoing professional development. Our staff undergo thorough background checks including criminal history, abuse/neglect registries, and motor vehicle checks per Article 63 guidelines.
                         </div>
                     </div>
                 </div>
 
                 <div class="faq-item">
                     <button class="faq-question" aria-expanded="false">
-                        <span class="faq-question-title">What if my case manager suspects abuse or neglect?</span>
+                        <span class="faq-question-title">What if my case manager suspects abuse, neglect, or exploitation?</span>
                         <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
                         </svg>
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Our case managers are mandated reporters, meaning they are legally required to report any suspected abuse, neglect, or exploitation to the appropriate authorities. Your safety and wellbeing are our highest priorities.
+                            Our case managers are mandated reporters, meaning they are legally required to report any suspected abuse, neglect, or exploitation to the appropriate authorities. We believe in mutual respect and transparency—unless there is an imminent safety concern to you, your loved one, or our staff, you will be notified that Pathways has made a report. We believe in building long-lasting, trusting relationships. Your safety and wellbeing are our highest priorities.
                         </div>
                     </div>
                 </div>
@@ -962,7 +1008,7 @@
                     </button>
                     <div class="faq-answer">
                         <div class="faq-answer-content">
-                            Your annual Person-Centered Support Plan (PCSP) meeting is an opportunity to review your progress over the past year, celebrate achievements, discuss what's working well and what isn't, and set new goals for the year ahead. You invite who you want to be there—family members, friends, service providers, or anyone important to you. Your case manager facilitates the meeting, but you're in charge of the conversation and decisions.
+                            Your annual Person-Centered Support Plan (PCSP) meeting is an opportunity to review your progress over the past year, celebrate achievements, discuss what's working well and what isn't, and set new goals for the year ahead. You decide who you want to be there—family members, friends, service providers, or anyone important to you. Your case manager typically facilitates the meeting, but you're in charge of the conversation and decisions.
                         </div>
                     </div>
                 </div>
