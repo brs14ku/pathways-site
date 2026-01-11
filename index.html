@@ -416,6 +416,82 @@
         }
 
 
+        /* FAQ Section */
+        .faq-section {
+            background-color: var(--bg-light);
+        }
+
+        .faq-container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background-color: var(--bg-white);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            border: 1px solid var(--border-color);
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
+        }
+
+        .faq-item:hover {
+            box-shadow: var(--card-shadow);
+        }
+
+        .faq-question {
+            width: 100%;
+            padding: 1.5rem;
+            background: none;
+            border: none;
+            text-align: left;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 1.125rem;
+            font-weight: 600;
+            color: var(--text-dark);
+            transition: background-color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            background-color: var(--bg-light);
+        }
+
+        .faq-question-title {
+            flex: 1;
+            padding-right: 1rem;
+        }
+
+        .faq-icon {
+            width: 24px;
+            height: 24px;
+            flex-shrink: 0;
+            transition: transform 0.3s ease;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(180deg);
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+
+        .faq-answer-content {
+            padding: 0 1.5rem 1.5rem 1.5rem;
+            color: var(--text-light);
+            line-height: 1.8;
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 500px;
+        }
+
         /* Logo Display Section */
         .logo-display-section {
             background-color: var(--bg-white);
@@ -607,6 +683,91 @@
         </div>
     </section>
 
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">What is Targeted Case Management?</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-title">1. Assessment</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            An ongoing process for the identification of the person's needs, the determination of a person's preferred lifestyle, and the resources that are available to the person, through both formal and informal evaluation methods.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-title">2. Support Planning</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            This process involves the participation of the person and the person's support network to develop or assist in the development of updating and reviewing the person's PCSP (Person Centered Support Plan) and any related service or support plan after a comprehensive assessment of the individual's support needs. These plans are developed to assist the person/circle of support in meeting the person's needs and achieving the person's preferred lifestyle. Support planning includes providing assistance to the person in being knowledgeable about the types and availability of community services and support options, in receiving information regarding the rights of persons served pursuant to the developmental disabilities reform act and implementing regulations, the content of which shall be approved by the commission, and in obtaining the community services and supports of the person's choice.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-title">3. Support Coordination and Referral</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Arranging for and securing supports outlined in the person's person-centered support plan. This service includes developing and accessing natural supports and generic community support systems, including pursuing means for gaining access to needed services and entitlements, and seeking modification of service systems when necessary to increase the accessibility to those systems by the person.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-title">4. Monitoring and Follow Up</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Including ongoing activities that are necessary to ensure that the person-centered support plan and related supports and services are effectively implemented and adequately addressing the needs of the person.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span class="faq-question-title">5. Assisting Transition and Portability</span>
+                        <svg class="faq-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="faq-answer">
+                        <div class="faq-answer-content">
+                            Including the planning of and arranging for services to follow the person when the person moves between any of the following:
+                            <ul style="margin-top: 0.5rem; margin-left: 1.5rem;">
+                                <li>From school to the adult world</li>
+                                <li>From an institution to community alternatives</li>
+                                <li>From one kind of service setting to another kind of service setting</li>
+                                <li>From one provider to another provider</li>
+                                <li>From one service area to another service area</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Services Section -->
     <section id="services">
         <div class="container">
@@ -765,6 +926,26 @@
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
                 menuToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+
+        // FAQ Toggle
+        document.querySelectorAll('.faq-question').forEach(button => {
+            button.addEventListener('click', () => {
+                const faqItem = button.parentElement;
+                const isActive = faqItem.classList.contains('active');
+
+                // Close all other FAQ items
+                document.querySelectorAll('.faq-item').forEach(item => {
+                    if (item !== faqItem) {
+                        item.classList.remove('active');
+                        item.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+                    }
+                });
+
+                // Toggle current item
+                faqItem.classList.toggle('active');
+                button.setAttribute('aria-expanded', !isActive);
             });
         });
 
