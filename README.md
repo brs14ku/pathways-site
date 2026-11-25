@@ -75,9 +75,16 @@ To make changes, edit `index.html` and refresh the browser.
 ## File Structure
 
 ```
-website/
-├── index.html          # Main website file (HTML + CSS + JS)
-└── README.md          # This file
+pathways-site/
+├── .github/
+│   └── workflows/
+│       └── static.yml       # GitHub Pages deploy on push to main
+├── images/                  # Site photos
+│   └── reilly-schultz.jpg   # Managing Director photo
+├── CNAME                    # Custom domain for GitHub Pages
+├── favicon.svg              # Site icon
+├── index.html               # Main website file (HTML + CSS + JS)
+└── README.md                # This file
 ```
 
 ## Browser Support
