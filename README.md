@@ -11,6 +11,27 @@ A professional, fast-loading single-page website for Pathways Case Management Se
 - **SEO optimized** - Meta tags, Open Graph tags, semantic structure
 - **Form validation** - Client-side validation with user-friendly error messages
 
+## Running Locally
+
+There is no build step — the site is plain static files. Clone the repo and preview it:
+
+```bash
+git clone git@github.com:brs14ku/pathways-site.git
+cd pathways-site
+```
+
+**Quick option:** Open `index.html` directly in your browser.
+
+**Recommended:** Run a local static server so relative paths behave like production:
+
+```bash
+python3 -m http.server 8000
+```
+
+Then visit [http://localhost:8000](http://localhost:8000). (`python3` ships with macOS.) Node users can run `npx serve .` instead.
+
+To make changes, edit `index.html` and refresh the browser.
+
 ## Deployment Options
 
 ### Option 1: GitHub Pages (Recommended)
