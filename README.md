@@ -9,7 +9,7 @@ A professional, fast-loading single-page website for Pathways Case Management Se
 - **Fast loading** - No external dependencies, embedded CSS
 - **Accessible** - WCAG AA compliant, semantic HTML, keyboard navigation
 - **SEO optimized** - Meta tags, Open Graph tags, semantic structure
-- **Form validation** - Client-side validation with user-friendly error messages
+- **Email contact** - Contact and job-inquiry links open the visitor's email client (mailto), no form backend required
 
 ## Running Locally
 
@@ -72,27 +72,6 @@ To make changes, edit `index.html` and refresh the browser.
 3. Follow Netlify's DNS configuration instructions
 4. SSL certificate is automatically provisioned
 
-## Form Setup
-
-The contact form uses Formspree (free tier: 50 submissions/month).
-
-**To activate the form:**
-
-1. Go to [formspree.io](https://formspree.io) and create a free account
-2. Create a new form
-3. Copy your form ID
-4. In `index.html`, find line with `action="https://formspree.io/f/YOUR_FORM_ID"`
-5. Replace `YOUR_FORM_ID` with your actual Formspree form ID
-
-**Alternative: Netlify Forms (if using Netlify)**
-
-1. In the `<form>` tag, add `netlify` attribute:
-   ```html
-   <form id="contactForm" name="contact" method="POST" netlify>
-   ```
-2. Remove the `action` attribute
-3. Redeploy - forms will appear in Netlify dashboard
-
 ## File Structure
 
 ```
@@ -138,7 +117,6 @@ All content is in `index.html`. Simply edit the text within the HTML tags.
 ## Maintenance
 
 - **Regular updates**: Review and update content quarterly
-- **Form monitoring**: Check Formspree dashboard for submissions
 - **Analytics**: Consider adding Google Analytics or Plausible for visitor tracking
 
 ## Support
